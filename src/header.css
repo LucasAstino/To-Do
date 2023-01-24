@@ -1,0 +1,54 @@
+.header{
+    background-color: var(--gray-700);
+    height: 200px;
+    width: 100%;
+}
+
+.logo{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+  }
+  
+  .title{
+    font-family: 'Inter', sans-serif;
+    color: var(--blue);
+  }
+  
+  .title span{
+    color: var(--purpleDark);
+  }
+
+  .inputTask{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .inputTask input{
+    width: 39.875rem;
+    padding: 16px;
+    color: var(--gray-300);
+    background-color: var(--gray-500);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .inputTask button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 5.625rem;
+    padding: 16px;
+    color: white;
+    background-color: var(--blueDark);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  

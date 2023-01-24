@@ -1,0 +1,51 @@
+.tasksContainer{
+    width: 736px;
+    height: 287px;
+    margin: auto;
+    margin-top: 6rem;
+    
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.headerTasks{
+ display:flex ;
+ justify-content: space-between; 
+}
+
+.headerTasks span{
+    background-color: var(--gray-400);
+    color: var(--gray-200);
+    padding: 2px 8px;
+    border-radius: 100%;
+}
+
+.created{
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.done{
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 64px;
+    gap: 16px;
+    border-radius: 8px;
+    border-top: 1px solid var(--gray-400);
+}
+
+.notTasks{
+    text-align: center;
+    font-weight: 400;
+    color: var(--gray-300);
+}
