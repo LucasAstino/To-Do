@@ -1,25 +1,16 @@
-import React, { useState } from "react"
-
+import React, { useState } from "react";
 
 interface EnumServiceGetOrderBy {
-  teste:Array<{
-    task:{
-    check:boolean,
-    content:string
-  }
-  }>
+  teste: Array<{
+    task: {
+      check: boolean;
+      content: string;
+    };
+  }>;
 }
 
-export default function Tasks({teste}:EnumServiceGetOrderBy){
+export default function Tasks({ teste }: EnumServiceGetOrderBy) {
+  console.log(teste);
 
-
-console.log(teste)
-    
-    return(
-        <div>    
-         {teste.map(t =>{
-          <h1>oi</h1>
-         })} 
-        </div>
-    )
+  return <div></div>;
 }
