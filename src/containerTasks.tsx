@@ -4,11 +4,17 @@ import"./containerTasks.css"
 import NotTasks from "./notTasks"
 import Tasks from "./Tasks"
 
+interface taskprops {
+    task:Array<{
+        check:boolean;
+        content:string
+    }>
+}
 
-export default function ContainerTasks() {
 
-    const [tasksList,setTasksList]=useState([{task:{check:false, content:'olá'}},{task:{check:false, content:'olá'}}])
-    
+
+
+export default function ContainerTasks(props:taskprops) {
     
 
     
@@ -23,9 +29,8 @@ return(
    
     <main className="main">
 
-        <div>
-            {tasksList.length > 0 ? <Tasks teste={[...tasksList]}/> : <NotTasks/>}
-        </div>
+            {props.task.length > 0 ? <Tasks teste={[...props.task]}/> : <NotTasks/>}
+
     </main>
 </section>
   

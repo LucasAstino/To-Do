@@ -1,16 +1,26 @@
 import React, { useState } from "react";
+import { Trash } from "phosphor-react";
+import "./tasks.css"
 
 interface EnumServiceGetOrderBy {
-  teste: Array<{
-    task: {
-      check: boolean;
-      content: string;
-    };
-  }>;
+     teste:Array<{
+       check: boolean;
+       content: string;
+      }> 
+    
 }
 
 export default function Tasks({ teste }: EnumServiceGetOrderBy) {
   console.log(teste);
 
-  return <div></div>;
+
+  return <>
+  {teste.map(t=>{
+    return <div className="task">
+            <input type="checkbox" ></input>
+            <p>{t.content}</p>
+            <Trash size={25} color="red"/>
+           </div>
+  })}
+         </>;
 }
